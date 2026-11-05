@@ -1,0 +1,29 @@
+model,label,phase_margin_deg,crossover_rad_s,PM_delay_ms,linear_boundary_ms,linear_lower_ms,linear_upper_ms,zero_delay_radius,note
+point,PD-reference,27.268429866449196,13.655507859474147,34.85215547574832,34.5,34.0,35.0,0.993716414195083,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,LQR-oracle,68.60885700999046,29.96269693422204,39.96470856689311,39.5,39.0,40.0,0.9871989853410412,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,FD-reference,22.2323724429192,25.36674191269594,15.296725964810989,15.5,15.0,16.0,0.990476031410714,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,FD-fixed-a0.0,60.34021658877941,30.60420273939401,34.41146498108563,34.5,34.0,35.0,0.9867545860169374,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,FD-redesign-a0.4,26.474732951988102,7.638702780941297,60.4908021491956,60.5,60.0,61.0,0.9965779808637845,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,C-legacy-units,27.83018043549822,8.649941762343403,56.15393645054577,56.5,56.0,57.0,0.9870025941704668,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,C-correct-units,43.28863541219158,17.29803281970633,43.6771755790311,43.5,43.0,44.0,0.9873763198452002,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,C-causal-base,33.37759266771141,17.29803281970617,33.677175579030795,33.5,33.0,34.0,0.9874964544122788,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,C-causal-w1,41.488916680497624,21.058915251320617,34.3853513117144,34.5,34.0,35.0,0.9878904411352365,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,dLQG-base,40.623716389481814,17.200244734841075,41.22136727256235,41.5,41.0,42.0,0.9871695666138792,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,dLQG-w1,51.52583424494193,21.253362149693388,42.31309150416265,42.5,42.0,43.0,0.98716956661388,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+point,delay-aware-base,,,,,,,,Controller depends on delay; fixed-loop PM division is inapplicable.
+point,delay-aware-tuned,,,,,,,,Controller depends on delay; fixed-loop PM division is inapplicable.
+point,KF-LQR-base,40.13515333911397,18.275899289796637,38.328651326691,38.5,38.0,39.0,0.9871989853410397,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,PD-reference,35.401453405525444,14.335567635269404,43.100624798256675,43.5,43.0,44.0,0.9938933984245351,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,LQR-oracle,68.47168053523944,24.866486546960143,48.058911236084285,48.5,48.0,49.0,0.9875308771388716,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,FD-reference,25.945461553881017,22.267653394930313,20.33594299469044,20.5,20.0,21.0,0.9905954689887128,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,FD-fixed-a0.1,60.266306715100825,25.495959945937866,41.25537859431971,41.5,41.0,42.0,0.9869856995292556,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,FD-redesign-a0.6,27.409495453167835,7.363289578937889,64.96905178584574,64.5,64.0,65.0,0.997178927082201,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,C-legacy-units,27.896752677542196,8.49359195484572,57.324414385115034,57.5,57.0,58.0,0.9874123094412035,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,C-correct-units,44.173200425080864,16.335313967089423,47.19638631459917,47.5,47.0,48.0,0.9877309610471263,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,C-causal-base,34.81375495172742,16.33531396708937,37.196386314599124,37.5,37.0,38.0,0.9878219668455366,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,C-causal-w0,34.81375495172742,16.33531396708937,37.196386314599124,37.5,37.0,38.0,0.9878219668455366,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,dLQG-base,41.93356327392627,16.30774756925509,44.879204998438496,44.5,44.0,45.0,0.9875046938634928,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,dLQG-w2,60.56040529706752,20.58407437497159,51.349331989454676,51.5,51.0,52.0,0.9875046938634997,Exact fractional measurement delay with held actuator input; 1 ms bracket.
+rod,delay-aware-base,,,,,,,,Controller depends on delay; fixed-loop PM division is inapplicable.
+rod,delay-aware-tuned,,,,,,,,Controller depends on delay; fixed-loop PM division is inapplicable.
+rod,KF-LQR-base,41.20886681522015,17.24656577079254,41.70281878143269,41.5,41.0,42.0,0.9875308771388698,Exact fractional measurement delay with held actuator input; 1 ms bracket.

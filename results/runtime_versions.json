@@ -1,0 +1,20 @@
+{
+  "science_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "science_packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2",
+    "control": "0.10.2",
+    "opencv-python": "4.13.0.92"
+  },
+  "media_encoder": "9.0.2-essentials_build-www.gyan.dev",
+  "imageio_ffmpeg": "0.8.1",
+  "document_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "document_packages": {
+    "python-docx": "1.2.0",
+    "lxml": "6.1.1",
+    "pypdf": "6.10.0",
+    "Pillow": "13.0.0"
+  }
+}

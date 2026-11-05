@@ -1,0 +1,17 @@
+{
+  "revised_ieee_manuscript": {
+    "pages": 6,
+    "native_equations": 7,
+    "embedded_figures": 7
+  },
+  "revised_detailed_derivations": {
+    "pages": 12,
+    "native_equations": 59,
+    "embedded_figures": 4
+  },
+  "methodological_response": {
+    "pages": 2,
+    "native_equations": 1,
+    "embedded_figures": 0
+  }
+}

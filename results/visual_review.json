@@ -1,0 +1,50 @@
+{
+  "all_pages_reviewed": true,
+  "unresolved_layout_issues": [],
+  "renderer": "Microsoft Word 16 with Poppler page images at 100 dpi",
+  "documents": {
+    "revised_ieee_manuscript": {
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "docx_sha256": "d97287972b9346bce436a64de741991981b8ee805916cd4997b9c163a87f2ffc",
+      "pdf_sha256": "06e96d3f49c35e24c512e458add85ab87c07329587399adbaf79cb04a1efadba"
+    },
+    "revised_detailed_derivations": {
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "docx_sha256": "984fbc7fdc98262b3623c9422d27c2c8f27c66881dd27e45b0f526945cb231bf",
+      "pdf_sha256": "e27be519afe5ff0199f13a00e9f4e221f8b3a1513ed47f87004c786dcb464d14"
+    },
+    "methodological_response": {
+      "pages_reviewed": [
+        1,
+        2
+      ],
+      "docx_sha256": "2c0b86ad6a414b8878e201bddcf0b3b194308fb2992172c728ae0c5b40a8a54e",
+      "pdf_sha256": "2fe66ed636a2074b9d0acbf19700e0df085feb8d501c23d974474dc57855a811"
+    }
+  },
+  "review_notes": [
+    "Every rendered page inspected; no clipping, overlap or missing mathematical glyphs.",
+    "Compact tables and captions kept together; repeated headers retained for long tables.",
+    "Timestamp prediction indices and b-minus-a paired-effect notation checked against the implementation."
+  ]
+}

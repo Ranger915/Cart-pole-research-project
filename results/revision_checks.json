@@ -1,0 +1,950 @@
+[
+  {
+    "name": "point PD-reference 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point PD-reference 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point LQR-oracle 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point LQR-oracle 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-reference 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-reference 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-fixed-a0.0 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-fixed-a0.0 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-redesign-a0.4 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-redesign-a0.4 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-legacy-units 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-legacy-units 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-correct-units 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-correct-units 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-causal-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-causal-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-causal-w1 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-causal-w1 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point dLQG-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point dLQG-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point dLQG-w1 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point dLQG-w1 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point delay-aware-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point delay-aware-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point delay-aware-tuned 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point delay-aware-tuned 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point KF-LQR-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point KF-LQR-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod PD-reference 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod PD-reference 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod LQR-oracle 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod LQR-oracle 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-reference 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-reference 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-fixed-a0.1 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-fixed-a0.1 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-redesign-a0.6 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-redesign-a0.6 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-legacy-units 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-legacy-units 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-correct-units 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-correct-units 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-causal-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-causal-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-causal-w0 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-causal-w0 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod dLQG-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod dLQG-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod dLQG-w2 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod dLQG-w2 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod delay-aware-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod delay-aware-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod delay-aware-tuned 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod delay-aware-tuned 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod KF-LQR-base 5N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod KF-LQR-base 10N first crossing bracket width",
+    "value": 1.0,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e-6",
+    "value": 2.545670676696225e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e-5",
+    "value": 2.545670676696225e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e-4",
+    "value": 2.545670676696225e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e-3",
+    "value": 2.545670676696225e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e-2",
+    "value": 2.545670676696225e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e-1",
+    "value": 1.1319324498456446e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e0",
+    "value": 2.842524599820235e-12,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e1",
+    "value": 2.446277304144091e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e2",
+    "value": 1.916536679761463e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e3",
+    "value": 5.517949826373845e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e4",
+    "value": 5.829215931814328e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e5",
+    "value": 1.0589234437522007e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e6",
+    "value": 2.545670676696225e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e7",
+    "value": 3.2033127435120145e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point all Riccati residuals sigma 1e8",
+    "value": 6.63442032460555e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "point nonlinear Jacobian A",
+    "value": 5.7553961596568115e-12,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "point nonlinear Jacobian B",
+    "value": 0.0,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "point RK4 step halving",
+    "value": 1.6839828143044855e-14,
+    "limit": 1e-07,
+    "passed": true
+  },
+  {
+    "name": "point covariance units ratio identity",
+    "value": 2.5274164522531783e-12,
+    "limit": 1e-09,
+    "passed": true
+  },
+  {
+    "name": "point predictor zero delay equality",
+    "value": 0.0,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "point predictor fractional perfect model equality",
+    "value": 8.538947326997004e-11,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "point fractional input convolution 1 ms",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point fractional input convolution 9 ms",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point fractional input convolution 10 ms",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point fractional input convolution 37 ms",
+    "value": 4.440892098500626e-16,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point fractional input convolution 60 ms",
+    "value": 4.440892098500626e-16,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point fractional input convolution 115 ms",
+    "value": 2.220446049250313e-15,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point PD-reference nominal closed loop radius",
+    "value": 0.993716414195083,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point LQR-oracle nominal closed loop radius",
+    "value": 0.9871989853410412,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-reference nominal closed loop radius",
+    "value": 0.990476031410714,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-fixed-a0.0 nominal closed loop radius",
+    "value": 0.9867545860169374,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point FD-redesign-a0.4 nominal closed loop radius",
+    "value": 0.9965779808637845,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-legacy-units nominal closed loop radius",
+    "value": 0.9870025941704668,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-correct-units nominal closed loop radius",
+    "value": 0.9873763198452002,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-causal-base nominal closed loop radius",
+    "value": 0.9874964544122788,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point C-causal-w1 nominal closed loop radius",
+    "value": 0.9878904411352365,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point dLQG-base nominal closed loop radius",
+    "value": 0.9871695666138792,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point dLQG-w1 nominal closed loop radius",
+    "value": 0.98716956661388,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point KF-LQR-base nominal closed loop radius",
+    "value": 0.9871989853410397,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "point CRN batch invariance success",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point CRN batch invariance dwell",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point CRN batch invariance rms_active",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point CRN batch invariance rms_full",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point CRN batch invariance peak",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "point inactive trajectory optimization success",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "point inactive trajectory optimization dwell",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "point inactive trajectory optimization rms_active",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "point inactive trajectory optimization rms_full",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "point inactive trajectory optimization peak",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "point inactive trajectory optimization failure_time",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e-6",
+    "value": 1.3873837974207996e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e-5",
+    "value": 1.5722267086410615e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e-4",
+    "value": 1.3873837974207996e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e-3",
+    "value": 1.3873837974207996e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e-2",
+    "value": 1.3873837974207996e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e-1",
+    "value": 1.1030619691940681e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e0",
+    "value": 3.663865037309293e-12,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e1",
+    "value": 8.021559874493612e-12,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e2",
+    "value": 1.168755356710129e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e3",
+    "value": 5.411666856472288e-12,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e4",
+    "value": 1.9147557372347637e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e5",
+    "value": 7.154333316908046e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e6",
+    "value": 6.738044304852241e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e7",
+    "value": 1.8431125697780243e-13,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod all Riccati residuals sigma 1e8",
+    "value": 7.223817645722464e-14,
+    "limit": 1e-06,
+    "passed": true
+  },
+  {
+    "name": "rod nonlinear Jacobian A",
+    "value": 3.7907454952801345e-12,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "rod nonlinear Jacobian B",
+    "value": 2.220446049250313e-16,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "rod RK4 step halving",
+    "value": 1.3407677745824742e-14,
+    "limit": 1e-07,
+    "passed": true
+  },
+  {
+    "name": "rod covariance units ratio identity",
+    "value": 2.477750692087297e-12,
+    "limit": 1e-09,
+    "passed": true
+  },
+  {
+    "name": "rod predictor zero delay equality",
+    "value": 0.0,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "rod predictor fractional perfect model equality",
+    "value": 5.1247006638277526e-11,
+    "limit": 1e-08,
+    "passed": true
+  },
+  {
+    "name": "rod fractional input convolution 1 ms",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod fractional input convolution 9 ms",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod fractional input convolution 10 ms",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod fractional input convolution 37 ms",
+    "value": 4.440892098500626e-16,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod fractional input convolution 60 ms",
+    "value": 5.551115123125783e-17,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod fractional input convolution 115 ms",
+    "value": 4.440892098500626e-16,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod PD-reference nominal closed loop radius",
+    "value": 0.9938933984245351,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod LQR-oracle nominal closed loop radius",
+    "value": 0.9875308771388716,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-reference nominal closed loop radius",
+    "value": 0.9905954689887128,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-fixed-a0.1 nominal closed loop radius",
+    "value": 0.9869856995292556,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod FD-redesign-a0.6 nominal closed loop radius",
+    "value": 0.997178927082201,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-legacy-units nominal closed loop radius",
+    "value": 0.9874123094412035,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-correct-units nominal closed loop radius",
+    "value": 0.9877309610471263,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-causal-base nominal closed loop radius",
+    "value": 0.9878219668455366,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod C-causal-w0 nominal closed loop radius",
+    "value": 0.9878219668455366,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod dLQG-base nominal closed loop radius",
+    "value": 0.9875046938634928,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod dLQG-w2 nominal closed loop radius",
+    "value": 0.9875046938634997,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod KF-LQR-base nominal closed loop radius",
+    "value": 0.9875308771388698,
+    "limit": 1.0,
+    "passed": true
+  },
+  {
+    "name": "rod CRN batch invariance success",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod CRN batch invariance dwell",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod CRN batch invariance rms_active",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod CRN batch invariance rms_full",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod CRN batch invariance peak",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true
+  },
+  {
+    "name": "rod inactive trajectory optimization success",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "rod inactive trajectory optimization dwell",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "rod inactive trajectory optimization rms_active",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "rod inactive trajectory optimization rms_full",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "rod inactive trajectory optimization peak",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "rod inactive trajectory optimization failure_time",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "crossing interpolation",
+    "value": 0.0,
+    "limit": 1e-12,
+    "passed": true
+  },
+  {
+    "name": "PM over crossover versus exact fractional lift maximum difference ms",
+    "value": 0.4690517858457355,
+    "limit": null,
+    "passed": true
+  }
+]

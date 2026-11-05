@@ -1,0 +1,13 @@
+file,frames,fps,codec,pixel_format,bytes
+point_d0_p10.mp4,240,24.0,H.264,yuv420p,901484
+point_d0_p5.mp4,240,24.0,H.264,yuv420p,863817
+point_d40_p10.mp4,240,24.0,H.264,yuv420p,1126717
+point_d40_p5.mp4,240,24.0,H.264,yuv420p,1157361
+point_d60_p10.mp4,240,24.0,H.264,yuv420p,880616
+point_d60_p5.mp4,240,24.0,H.264,yuv420p,1028264
+rod_d0_p10.mp4,240,24.0,H.264,yuv420p,940683
+rod_d0_p5.mp4,240,24.0,H.264,yuv420p,899811
+rod_d40_p10.mp4,240,24.0,H.264,yuv420p,1313072
+rod_d40_p5.mp4,240,24.0,H.264,yuv420p,1266449
+rod_d60_p10.mp4,240,24.0,H.264,yuv420p,1160373
+rod_d60_p5.mp4,240,24.0,H.264,yuv420p,1321326

@@ -1,0 +1,84 @@
+{
+  "point": {
+    "unit_ratio_identity_relative_error": 2.5274164522531783e-12,
+    "predictor_zero_delay_error": 0.0,
+    "predictor_perfect_model_delay_equivalence_error": 8.538947326997004e-11,
+    "C-causal_sweep": {
+      "selected_label": "C-causal-w1",
+      "selected_scale": 10.0,
+      "highest_power": 8,
+      "high_end_gain_relative_change": 0.6837713383701216,
+      "development_score_at_high_end": [
+        0.4,
+        0.0,
+        -7.140363220938599
+      ],
+      "best_development_score": [
+        0.875,
+        0.0,
+        -5.761673744534692
+      ],
+      "finite_peak_bracketed": true,
+      "note": "If the discrete gain converges and survival plateaus, the optimum is not identified as a unique finite multiplier. All settings are retained."
+    },
+    "dLQG_sweep": {
+      "selected_label": "dLQG-w1",
+      "selected_scale": 10.0,
+      "highest_power": 8,
+      "high_end_gain_relative_change": 9.477743550689155e-05,
+      "development_score_at_high_end": [
+        0.97,
+        0.0,
+        -7.829076852645878
+      ],
+      "best_development_score": [
+        0.993,
+        0.0,
+        -5.060261313907442
+      ],
+      "finite_peak_bracketed": true,
+      "note": "If the discrete gain converges and survival plateaus, the optimum is not identified as a unique finite multiplier. All settings are retained."
+    }
+  },
+  "rod": {
+    "unit_ratio_identity_relative_error": 2.477750692087297e-12,
+    "predictor_zero_delay_error": 0.0,
+    "predictor_perfect_model_delay_equivalence_error": 5.1247006638277526e-11,
+    "C-causal_sweep": {
+      "selected_label": "C-causal-w0",
+      "selected_scale": 1.0,
+      "highest_power": 8,
+      "high_end_gain_relative_change": 0.6837716699434424,
+      "development_score_at_high_end": [
+        0.4,
+        0.0,
+        -7.254779741645018
+      ],
+      "best_development_score": [
+        0.9960000000000001,
+        0.006,
+        -5.188356386608923
+      ],
+      "finite_peak_bracketed": true,
+      "note": "If the discrete gain converges and survival plateaus, the optimum is not identified as a unique finite multiplier. All settings are retained."
+    },
+    "dLQG_sweep": {
+      "selected_label": "dLQG-w2",
+      "selected_scale": 100.0,
+      "highest_power": 8,
+      "high_end_gain_relative_change": 9.478560262706848e-05,
+      "development_score_at_high_end": [
+        0.999,
+        0.0,
+        -7.908726815457493
+      ],
+      "best_development_score": [
+        1.0,
+        0.0,
+        -5.541617625556276
+      ],
+      "finite_peak_bracketed": true,
+      "note": "If the discrete gain converges and survival plateaus, the optimum is not identified as a unique finite multiplier. All settings are retained."
+    }
+  }
+}

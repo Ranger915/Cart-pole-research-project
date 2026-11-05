@@ -1,0 +1,9 @@
+model,push_N,prediction,configurations,median_absolute_error_ms,spearman_rho,note
+point,5,PM_delay_ms,12,21.84258893688906,0.34965034965034975,Descriptive association across correlated listed configurations; no independence-based significance claim.
+point,5,linear_boundary_ms,12,21.691810344827587,0.37324869205811934,Descriptive association across correlated listed configurations; no independence-based significance claim.
+point,10,PM_delay_ms,12,5.160675497955072,0.6013986013986015,Descriptive association across correlated listed configurations; no independence-based significance claim.
+point,10,linear_boundary_ms,12,5.071820175438596,0.6197336773795189,Descriptive association across correlated listed configurations; no independence-based significance claim.
+rod,5,PM_delay_ms,12,26.268498768525134,0.4736842105263159,Descriptive association across correlated listed configurations; no independence-based significance claim.
+rod,5,linear_boundary_ms,12,26.306294425043966,0.49209214836334264,Descriptive association across correlated listed configurations; no independence-based significance claim.
+rod,10,PM_delay_ms,12,11.911103865012269,0.6070175438596492,Descriptive association across correlated listed configurations; no independence-based significance claim.
+rod,10,linear_boundary_ms,12,11.9488995215311,0.6326899050385834,Descriptive association across correlated listed configurations; no independence-based significance claim.
