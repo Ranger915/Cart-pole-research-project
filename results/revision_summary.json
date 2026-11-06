@@ -1,0 +1,33 @@
+{
+  "cells": 269,
+  "trajectories": 269000,
+  "zero_phase_matches": 269,
+  "max_absolute_change_60ms": 0.028,
+  "max_absolute_change_local": 0.054,
+  "half_threshold_changes": 7,
+  "point_base_60_5N": {
+    "model": "point",
+    "label": "dLQG-base",
+    "push_N": 5,
+    "delay_ms": 60,
+    "N": 500,
+    "fixed_success": 0.97,
+    "random_success": 0.942,
+    "difference": -0.028,
+    "low": -0.042,
+    "high": -0.016,
+    "original_bracket": false,
+    "fixed_dwell": 0.0,
+    "fixed_rms_active": 8.340378557978543,
+    "fixed_rms_full": 8.225301065660515,
+    "fixed_saturation_active": 0.5693933104178104,
+    "random_dwell": 0.0,
+    "random_rms_active": 8.348512543029727,
+    "random_rms_full": 8.127323251771983,
+    "random_saturation_active": 0.5709349194301676
+  },
+  "actual_maximum_delays_ms": {
+    "point": 300,
+    "rod": 600
+  }
+}

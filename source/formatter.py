@@ -8,6 +8,7 @@ from docx.enum.section import WD_SECTION_START
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent if HERE.name=='source' else HERE.parents[1];OUT=ROOT if HERE.name=='source' else ROOT/'outputs/ieee_revision'
@@ -15,7 +16,7 @@ def read(name):
  with open(OUT/'results'/name,encoding='utf-8') as f:return list(csv.DictReader(f))
 MATH=json.loads((OUT/'results/equations_mathml.json').read_text())
 AUTHOR='RAAGHAVAN MOOKIAH BARATHKUMAR'
-TITLE='Tuning and Delay Prediction in Cart Pole Survival Boundaries'
+TITLE='Tuning and Delay-Aware State Prediction in Cart-Pole Survival Boundaries'
 XSL=etree.XSLT(etree.parse(r'C:/Program Files/Microsoft Office/root/Office16/MML2OMML.XSL'))
 def esc(t):return __import__('html').escape(str(t))
 def tag(t,s):return '<'+t+'>'+s+'</'+t+'>'
@@ -85,7 +86,7 @@ def fm(x,n=3):
 def pairedrow(model,a,b):return next(r for r in paired if r['model']==model and r['scenario']=='joint_d60_p5' and r['controller_a']==a and r['controller_b']==b)
 class Builder:
  def __init__(self,main):
-  self.doc=Document();self.main=main;self.eqcount=0;self.lines=[]
+  self.doc=Document();self.main=main;self.eqcount=0;self.lines=[];self.references=[]
   sec=self.doc.sections[0];sec.page_width=Inches(8.5);sec.page_height=Inches(11);sec.top_margin=Inches(.65);sec.bottom_margin=Inches(.7);sec.left_margin=sec.right_margin=Inches(.7)
   for name in ['Normal','Title','Subtitle','Heading 1','Heading 2','Caption']:
    st=self.doc.styles[name];st.font.name='Times New Roman';st.font.color.rgb=RGBColor(0,0,0);st._element.get_or_add_rPr().rFonts.set(qn('w:eastAsia'),'Times New Roman')
@@ -118,6 +119,39 @@ class Builder:
  def reference(self,text):
   p=self.p(text);p.alignment=WD_ALIGN_PARAGRAPH.LEFT;p.paragraph_format.left_indent=Inches(.16);p.paragraph_format.first_line_indent=Inches(-.16);p.paragraph_format.space_after=Pt(2)
   for r in p.runs:r.font.size=Pt(8.5)
+  self.references.append((int(re.match(r'\[(\d+)\]',text).group(1)),p,text))
+ def links(self,items):
+  p=self.doc.add_paragraph()
+  for i,(label,url) in enumerate(items):
+   if i:p.add_run(' | ')
+   link=OxmlElement('w:hyperlink');link.set(qn('r:id'),p.part.relate_to(url,RT.HYPERLINK,is_external=True))
+   run=OxmlElement('w:r');properties=OxmlElement('w:rPr');underline=OxmlElement('w:u');underline.set(qn('w:val'),'single');properties.append(underline);run.append(properties)
+   text=OxmlElement('w:t');text.text=label;run.append(text);link.append(run);p._p.append(link)
+   self.lines.append('['+label+']('+url+')')
+  return p
+ def renumber_references(self):
+  citation=re.compile(r'\[(\d+)\](?:\s*[–-]\s*\[(\d+)\])?')
+  ids={id(p._p) for _,p,_ in self.references};order=[]
+  def numbers(match):return range(int(match[1]),int(match[2])+1) if match[2] else [int(match[1])]
+  for p in self.doc.paragraphs:
+   if id(p._p) not in ids:
+    for match in citation.finditer(p.text):
+     for number in numbers(match):
+      if number not in order:order.append(number)
+  refs={number:(p,text) for number,p,text in self.references};assert set(order)<=set(refs),set(order)-set(refs)
+  mapping={old:new for new,old in enumerate(order,1)}
+  def replace(text):return citation.sub(lambda m:', '.join('['+str(mapping[n])+']' for n in numbers(m)),text)
+  for p in self.doc.paragraphs:
+   if id(p._p) not in ids:
+    for run in p.runs:
+     if citation.search(run.text):run.text=replace(run.text)
+  if self.references:
+   parent=self.references[0][1]._p.getparent();index=parent.index(self.references[0][1]._p)
+   for _,p,_ in self.references:parent.remove(p._p)
+   for i,old in enumerate(order):
+    p,text=refs[old];p.runs[0].text=re.sub(r'^\[\d+\]','['+str(i+1)+']',text);parent.insert(index+i,p._p)
+  oldtexts={text for _,_,text in self.references};self.lines=[replace(line) for line in self.lines if line not in oldtexts]+[re.sub(r'^\[\d+\]','['+str(i+1)+']',refs[old][1]) for i,old in enumerate(order)]
+  return order
  def eq(self,key,custom=False):
   mathml=CUSTOM[key] if custom else __import__('html').unescape(MATH[key]);result=XSL(etree.fromstring(mathml.encode()));nodes=result.xpath('//*[local-name()="oMath"]');assert nodes
   p=self.doc.add_paragraph();p.alignment=WD_ALIGN_PARAGRAPH.CENTER;p.paragraph_format.space_before=Pt(3);p.paragraph_format.space_after=Pt(5)
@@ -132,7 +166,7 @@ class Builder:
   im=Image.open(OUT/'figures'/(cap['name']+'.png'));w=3.38 if self.main else 7.0;h=w*im.height/im.width
   if h>(4.25 if self.main else 4.7):w*=((4.25 if self.main else 4.7)/h)
   p.add_run().add_picture(str(OUT/'figures'/(cap['name']+'.png')),width=Inches(w))
-  number=i if self.main else 'S'+str({10:1,11:2,8:3,9:4}.get(i,i))
+  number=i if self.main else 'S'+str({10:1,11:2,8:3,9:4,12:5}.get(i,i))
   p=self.doc.add_paragraph('Fig. '+str(number)+'. '+cap['caption'],'Caption');p.paragraph_format.keep_together=True
   self.lines.append('Fig. '+str(number)+'. '+cap['caption'])
  def table(self,headers,rows,widths=None):
@@ -158,6 +192,7 @@ class Builder:
    if idx==0:repeat=OxmlElement('w:tblHeader');trpr.append(repeat)
   self.doc.add_paragraph().paragraph_format.space_after=Pt(3)
  def save(self,name):
+  order=self.renumber_references()
   if self.main:
    # A terminal continuous section balances the journal's final text columns.
    tail=self.doc.add_section(WD_SECTION_START.CONTINUOUS)
@@ -181,5 +216,6 @@ class Builder:
   path=OUT/(name+'.docx');self.doc.save(path);(OUT/(name+'.md')).write_text('\n\n'.join(self.lines),encoding='utf-8')
   with zipfile.ZipFile(path) as z:
    xml=z.read('word/document.xml').decode();assert '<m:oMath' in xml;assert AUTHOR in xml;assert 'AI assistance' not in xml and 'AI credit' not in xml
+  (OUT/'results'/(name+'_reference_order.json')).write_text(json.dumps(dict(original_ids_in_order=order,reference_count=len(order)),indent=2))
   print(name,'native equations',self.eqcount,flush=True)
 

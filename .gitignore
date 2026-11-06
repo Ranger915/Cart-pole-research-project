@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+qa/
+mplcache/
+phase_checkpoint_*.npz
+~$*
+*.zip

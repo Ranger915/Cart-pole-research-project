@@ -97,6 +97,8 @@ def simulate(rho,cases,ntrial=200,seed=20261121,horizon=10,record=False,linear=F
  for j,case in enumerate(cases):
   if not case.get('uncertain',True):p[:,j*ntrial:(j+1)*ntrial]=np.array([1.,.1,.5,.1])[:,None]
  delay=np.repeat([int(c['delay']) for c in cases],ntrial);limits=np.repeat([c.get('umax',10.) for c in cases],ntrial);push=np.repeat([c.get('push',5.) for c in cases],ntrial)
+ phase=np.concatenate([np.broadcast_to(np.asarray(c.get('push_phase_ms',0)),(ntrial,)) for c in cases])
+ if not (np.isfinite(phase).all() and np.all(phase==np.floor(phase)) and np.all((phase>=0)&(phase<10))):raise ValueError('push_phase_ms must contain integer phases from 0 through 9 ms')
  z=np.zeros((n,4));z[:,2]=.1;z0=z.copy();est=z.copy();held=z[:,[0,2]].copy();fdprev=held.copy();vel=np.zeros((n,2));cmd=np.zeros(n)
  maxdelay=int(max(delay));hist=np.zeros((maxdelay+1,n,4));hist[0]=z;uh=np.zeros((maxdelay//10+4,n));u0=np.zeros(n)
  stale=[z0[j*ntrial:(j+1)*ntrial].copy() for j in range(nc)];cov=[c['config']['d']['Pp'].copy() for c in cases];started=np.zeros(nc,bool)
@@ -151,7 +153,7 @@ def simulate(rho,cases,ntrial=200,seed=20261121,horizon=10,record=False,linear=F
     raw=-np.sum(fb*K,axis=1);cmd[sl]=np.clip(raw,-limits[sl],limits[sl]);cmd[sl][fail[sl]]=0
    uh[k%len(uh)]=cmd
    if k==0:u0=cmd.copy()
-  force=cmd+np.where((t>=2)&(t<2.1),push,0)
+  force=cmd+np.where((i>=2000+phase)&(i<2100+phase),push,0)
   if linear:
    A,B=model(rho)
    def f(q):return q@A.T+force[:,None]*B[:,0]

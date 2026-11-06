@@ -47,8 +47,8 @@ def main():
    z=sub[sub.push_N==p].set_index('label').loc[labels];v=z.D50_ms.to_numpy();lo=z.low_ms.to_numpy();hi=z.high_ms.to_numpy();ax.errorbar(v,yy+off,xerr=np.vstack([np.maximum(0,v-lo),np.maximum(0,hi-v)]),fmt='o',ms=3,capsize=2,color=col,label=f'{p} N')
    for j,r in enumerate(z.itertuples()):
     if r.status=='below-half-at-zero':ax.plot(0,j+off,'x',color=col)
-  ax.set_yticks(yy,[short(l) for l in labels],fontsize=8);ax.invert_yaxis();ax.set_xlabel('50% survival delay (ms)');ax.grid(axis='x',alpha=.2);ax.legend(fontsize=7);ax.set_title(model.capitalize()+' model');fig.tight_layout()
-  save(fig,'boundary_'+model,'Held-out '+model+' model 50% survival delays for 5 N and 10 N pushes. Bars are 95% trial-paired bootstrap intervals conditional on evaluated delays; the numerical crossing bracket is 1 ms. A cross at zero denotes survival below 50% without added delay. These are ten-second task boundaries, not stability certificates.')
+  ax.set_yticks(yy,[short(l) for l in labels],fontsize=8);ax.invert_yaxis();ax.set_xlabel('First observed crossing (ms)');ax.grid(axis='x',alpha=.2);ax.legend(fontsize=7);ax.set_title(model.capitalize()+' model');fig.tight_layout()
+  save(fig,'boundary_'+model,'Held-out '+model+' model first observed downward crossings of 50% ten-second survival for 5 N and 10 N pushes. Bars are 95% trial-paired bootstrap intervals conditional on evaluated delays; local numerical crossing brackets are 1 ms. A cross at zero denotes survival below 50% without added delay. These are not monotone delay limits or stability certificates.')
  fig,axs=plt.subplots(1,2,figsize=(7.1,3.1));joined=bd.merge(marg,on=['model','label'])
  for ax,key,title in zip(axs,['PM_delay_ms','linear_boundary_ms'],['Phase margin divided by crossover','Exact lifted linear boundary']):
   for model,col in [('point','#225ea8'),('rod','#c0392b')]:
@@ -100,9 +100,15 @@ def main():
  fig,ax=plt.subplots(figsize=(3.5,2.7))
  for model,col in [('point','#225ea8'),('rod','#c0392b')]:
   for fam,ls in [('C-causal','--'),('dLQG','-')]:
-   z=dev[(dev.model==model)&(dev.family==fam)&(dev.delay_ms==60)&(dev.push_N==5)].sort_values('scale');ax.semilogx(z.scale,z.success,'.',ls=ls,color=col,label=model+' '+fam)
+   z=dev[(dev.model==model)&(dev.family==fam)&(dev.delay_ms==60)&(dev.push_N==5)].sort_values('scale');ax.semilogx(z.scale,z.success,'.',ls=ls,color=col,label=model+' '+('causal cKF' if fam=='C-causal' else 'dKF'))
+   if fam=='dLQG':ax.scatter([1],[float(z[z.scale==1].iloc[0].success)],marker='s',s=20,color=col,zorder=5)
+ ax.axvline(1,color='.6',ls=':',lw=.7)
  ax.set(xlabel='Covariance multiplier σ',ylabel='60 ms 5 N survival',ylim=(-.03,1.03));ax.grid(alpha=.2);ax.legend(fontsize=7);replace(fig,'covariance_sweep')
- CAP[1]['caption']='Development survival at 60 ms/5 N over σ = 10⁻⁶ through 10⁸. The supplement includes zero-delay dwell and effort, which favor different operating points. The selection objective averages all five declared tasks, not only this cell.'
+ audit=pd.read_csv(e.OUT/'results/figure2_tableII_audit.csv');details=[]
+ for model in ['point','rod']:
+  devrow=audit[(audit.model==model)&(audit.regime=='development')].iloc[0];holdrow=audit[(audit.model==model)&(audit.regime=='held-out')].iloc[0]
+  details.append(f'{model} dKF {int(devrow.successes)}/{int(devrow.N)} ({100*devrow.success:.1f}%) versus held-out {int(holdrow.successes)}/{int(holdrow.N)} ({100*holdrow.success:.1f}%)')
+ CAP[1]['caption']='Development survival at 60 ms/5 N over σ = 10⁻⁶ through 10⁸. Squares mark dKF at σ = 1: '+'; '.join(details)+'. Fig. 2 uses seed 20261121 and 200 trials per point; Table II/Fig. 6 use seed 20261122 and 500. Solid curves are dKF; dashed curves are causal cKF. The selection objective averages all five declared tasks.'
  fig,ax=plt.subplots(figsize=(3.5,2.8))
  for model,col in [('point','#225ea8'),('rod','#c0392b')]:
   for push,mark in [(5,'o'),(10,'^')]:
@@ -118,5 +124,18 @@ def main():
  axs[0].legend(fontsize=7);axs[-1].set_xlabel('Delay relative to first D50 (ms)');replace(fig,'local_crossings')
  CAP.append(dict(name='fd_sweep_full',caption='Full development α sweep: mean survival, terminal dwell and active-time RMS across the five declared tasks, for fixed and filter-aware redesigned gains. Each setting uses 200 paired trials per task.'))
  CAP.append(dict(name='covariance_sweep_full',caption='Full covariance-ratio trade-off: 60 ms/5 N survival and zero-delay/5 N terminal dwell and active RMS, across both models and both corrected observer families. The full tested multiplier range extends fourteen orders of magnitude.'))
+ phase=pd.read_csv(e.OUT/'results/push_phase_summary.csv');fig,axs=plt.subplots(2,2,figsize=(7.1,4.6),sharex=True,sharey=True)
+ family={'PD':'Derivative / PD','FD':'Derivative / PD','STATE':'Velocity oracle','C-current':'Continuous KF','C-causal':'Continuous KF','DKF':'Discrete KF','KF':'Discrete KF','PRED':'Delay-aware predictor'}
+ colors={'Derivative / PD':'#225ea8','Velocity oracle':'#777777','Continuous KF':'#c0392b','Discrete KF':'#19865f','Delay-aware predictor':'#8a5295'}
+ for i,model in enumerate(['point','rod']):
+  kinds={c['label']:family[c['kind']] for c in configs[model]}
+  for j,push in enumerate([5,10]):
+   ax=axs[i,j];sub=phase[(phase.model==model)&(phase.push_N==push)].copy();sub['family']=sub.label.map(kinds)
+   for name,col in colors.items():
+    points=sub[sub.family==name];ax.scatter(points.fixed_success,points.random_success,color=col,s=12,alpha=.7,label=name)
+   ax.plot([0,1],[0,1],':',color='.4');ax.axhline(.5,ls=':',lw=.5,color='.7');ax.axvline(.5,ls=':',lw=.5,color='.7');ax.set(title=model.capitalize()+f' {push} N',xlim=(-.03,1.03),ylim=(-.03,1.03));ax.grid(alpha=.15)
+ for ax in axs[-1]:ax.set_xlabel('Fixed-phase survival')
+ for ax in axs[:,0]:ax.set_ylabel('Randomized-phase survival')
+ handles,labels=axs[0,0].get_legend_handles_labels();fig.legend(handles,labels,loc='upper center',ncol=3,fontsize=7);fig.tight_layout(rect=[0,0,1,.87]);save(fig,'push_phase_sensitivity','Randomized-minus-fixed push-phase sensitivity across all fourteen configurations, both push magnitudes and the queried local-crossing/60 ms cells. Each point compares 500 trial-paired realizations per regime; the diagonal is equality. The push starts at 2 s plus an independent uniform integer 0,…,9 ms and lasts 100 ms. This local sensitivity check does not re-estimate a full phase-averaged D50 curve.')
  (e.OUT/'figures/captions.json').write_text(json.dumps(CAP,indent=2));print('Figures complete',len(CAP),flush=True)
 if __name__=='__main__':main()

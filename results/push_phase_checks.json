@@ -1,0 +1,1906 @@
+{
+  "trials_per_cell": 500,
+  "measurement_parameter_seed": 20261122,
+  "phase_seed": 20261106,
+  "bootstrap_seed": 20261107,
+  "cells": 269,
+  "trajectories": 269000,
+  "phase_counts": [
+    61,
+    46,
+    54,
+    49,
+    43,
+    47,
+    41,
+    55,
+    52,
+    52
+  ],
+  "checks": [
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 35,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 38,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 39,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 42,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 33,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 36,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 37,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 40,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 74,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 77,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 78,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 81,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 53,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 57,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 51,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 52,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 55,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 28,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 31,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 32,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 35,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 5,
+      "delay_ms": 73,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 5,
+      "delay_ms": 76,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 5,
+      "delay_ms": 77,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 5,
+      "delay_ms": 80,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 10,
+      "delay_ms": 66,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 10,
+      "delay_ms": 69,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 10,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-fixed-a0.0",
+      "push_N": 10,
+      "delay_ms": 73,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 5,
+      "delay_ms": 57,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 5,
+      "delay_ms": 61,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 5,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 10,
+      "delay_ms": 52,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 10,
+      "delay_ms": 55,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 10,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 10,
+      "delay_ms": 59,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "FD-redesign-a0.4",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 59,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 44,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 47,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 51,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 59,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 43,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 46,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 47,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 50,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 46,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 49,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 50,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 53,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 33,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 36,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 37,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 40,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 5,
+      "delay_ms": 52,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 5,
+      "delay_ms": 55,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 5,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 5,
+      "delay_ms": 59,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 10,
+      "delay_ms": 35,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 10,
+      "delay_ms": 38,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 10,
+      "delay_ms": 39,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 10,
+      "delay_ms": 42,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "C-causal-w1",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 66,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 41,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 44,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 45,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 5,
+      "delay_ms": 61,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 5,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 5,
+      "delay_ms": 65,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 5,
+      "delay_ms": 68,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 10,
+      "delay_ms": 44,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 10,
+      "delay_ms": 47,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 10,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 10,
+      "delay_ms": 51,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "dLQG-w1",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 249,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 252,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 253,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 256,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 122,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 125,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 126,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 129,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 259,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 262,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 263,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 266,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 131,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 134,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 135,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 138,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 62,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 65,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 66,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 69,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 41,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 44,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 45,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "point",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 46,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 49,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 50,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 53,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "PD-reference",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 79,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 82,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 83,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 5,
+      "delay_ms": 86,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 66,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "LQR-oracle",
+      "push_N": 10,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 54,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 57,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 58,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 5,
+      "delay_ms": 61,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 51,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 54,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 55,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 58,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-reference",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 5,
+      "delay_ms": 81,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 5,
+      "delay_ms": 84,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 5,
+      "delay_ms": 85,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 5,
+      "delay_ms": 88,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 10,
+      "delay_ms": 76,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 10,
+      "delay_ms": 79,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 10,
+      "delay_ms": 80,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-fixed-a0.1",
+      "push_N": 10,
+      "delay_ms": 83,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 5,
+      "delay_ms": 66,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 5,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 10,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 10,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "FD-redesign-a0.6",
+      "push_N": 10,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 55,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 58,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 59,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-legacy-units",
+      "push_N": 10,
+      "delay_ms": 62,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 73,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 74,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 5,
+      "delay_ms": 77,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 55,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 58,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 59,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-correct-units",
+      "push_N": 10,
+      "delay_ms": 62,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 45,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 49,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 52,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 5,
+      "delay_ms": 63,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 5,
+      "delay_ms": 64,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 10,
+      "delay_ms": 45,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 10,
+      "delay_ms": 48,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 10,
+      "delay_ms": 49,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 10,
+      "delay_ms": 52,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "C-causal-w0",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 68,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 71,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 72,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 5,
+      "delay_ms": 75,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 53,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 57,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 5,
+      "delay_ms": 78,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 5,
+      "delay_ms": 81,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 5,
+      "delay_ms": 82,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 5,
+      "delay_ms": 85,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 10,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 10,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 10,
+      "delay_ms": 71,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "dLQG-w2",
+      "push_N": 10,
+      "delay_ms": 74,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 308,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 311,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 312,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 5,
+      "delay_ms": 315,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 170,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 173,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 174,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-base",
+      "push_N": 10,
+      "delay_ms": 177,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 311,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 314,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 315,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 5,
+      "delay_ms": 318,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 178,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 181,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 182,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "delay-aware-tuned",
+      "push_N": 10,
+      "delay_ms": 185,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 67,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 70,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 71,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 5,
+      "delay_ms": 74,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 53,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 56,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 57,
+      "zero_phase_matches_original": true
+    },
+    {
+      "model": "rod",
+      "label": "KF-LQR-base",
+      "push_N": 10,
+      "delay_ms": 60,
+      "zero_phase_matches_original": true
+    }
+  ],
+  "all_zero_phase_matches": true
+}

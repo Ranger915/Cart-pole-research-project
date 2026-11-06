@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/Ranger915/Cart-pole-research-project",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "doi": "10.5281/zenodo.24017779",
+  "record_url": "https://zenodo.org/records/24017779",
+  "license": "All rights reserved",
+  "author": "RAAGHAVAN MOOKIAH BARATHKUMAR",
+  "title": "Tuning and Delay-Aware State Prediction in Cart-Pole Survival Boundaries"
+}

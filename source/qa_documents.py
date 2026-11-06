@@ -3,7 +3,7 @@ import json,subprocess,zipfile
 from pypdf import PdfReader
 from PIL import Image,ImageDraw
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parent if HERE.name=='source' else HERE.parents[1];OUT=ROOT if HERE.name=='source' else ROOT/'outputs/ieee_revision';qa=HERE/'qa';qa.mkdir(exist_ok=True)
-poppler=r'C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1030-493-0_26.1030.493.0_x64__3k8sg7r9htsxt/dependencies/native/poppler/Library/bin/pdftoppm.exe'
+poppler=r'C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1105-1297-0_26.1105.1297.0_x64__3k8sg7r9htsxt/dependencies/native/poppler/Library/bin/pdftoppm.exe'
 audit={}
 for stem in ['revised_ieee_manuscript','revised_detailed_derivations','methodological_response']:
  folder=qa/stem;folder.mkdir(exist_ok=True)
